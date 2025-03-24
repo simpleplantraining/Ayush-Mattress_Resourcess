@@ -1,0 +1,60 @@
+@media screen and (max-width: 1280px) {
+    .ft-down-wrap {
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        row-gap: 40px;
+    }
+
+    .fb-top-wrap {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 40px;
+    }
+
+    .fb-top-wrap div:nth-child(5) {
+        grid-row-start: 2;
+    }
+
+    .fb-down-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fb-down-wrap .social {
+        justify-content: end;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .ft-down-wrap {
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    .fb-top-wrap {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fb-top-wrap div:nth-child(5) {
+        grid-row-start: 2;
+    }
+
+    .policy ul {
+        gap: 20px !important;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ft-down-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .fb-top-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .policy ul {
+        gap: 0px;
+    }
+
+}
