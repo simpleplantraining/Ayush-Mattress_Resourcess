@@ -474,20 +474,37 @@
     padding-top: 40px;
 }
 
-.premium-essentials{
+.premium-essentials {
     background-color: #041948;
     padding: 100px 0px;
 }
 
 .premium-essentials .box-items-1 {
-    background-image: url(../img/exp-brands1.png);
+    background-image: url(../img/pre-esen1.png);
 
 }
 
 .premium-essentials .box-items-2 {
-    background-image: url(../img/exp-brands2.png);
+    background-image: url(../img/pre-esen2.png);
 }
 
 .premium-essentials .box-items-3 {
-    background-image: url(../img/exp-brands3.png);
+    background-image: url(../img/pre-esen3.png);
+}
+
+.premium-essentials .cursive {
+    font-size: 28px;
+}
+
+.premium-essentials p {
+    max-width: 535px;
+}
+
+.pre-essentials-in .pe-content p:nth-last-child(1) {
+    padding: 32px 0px;
+}
+
+.premium-essentials .cursive,
+.explore-brands .cursive {
+    padding-bottom: 7px;
 }
