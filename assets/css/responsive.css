@@ -26,6 +26,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    header {
+        display: none;
+    }
+
     .ft-down-wrap {
         grid-template-columns: 1fr 1fr 2fr;
     }
@@ -42,11 +47,40 @@
         gap: 20px !important;
         padding-top: 20px;
     }
+
+    .mobile-header {
+        display: block;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    h2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .container-fluid {
+        padding: 0px 20px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .spacer {
+        height: 56px;
+    }
+
     .ft-down-wrap {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .fb-top-wrap {
@@ -57,4 +91,390 @@
         gap: 0px;
     }
 
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-img {
+        width: 100%;
+        position: relative;
+    }
+
+    .hero-right {
+        width: 100%;
+        padding: 55px 5px;
+        text-align: center !important;
+        align-items: center;
+    }
+
+    .hero-right p {
+        text-align: center !important;
+    }
+
+    .hero-heading h1 {
+        font-size: 42px;
+    }
+
+    .hero-base {
+        padding: 0px;
+    }
+
+    .hero .cursive.mob {
+        display: block;
+        font-size: 35px;
+        color: #CC922F;
+        margin-top: -36px;
+    }
+
+    .hero-right {
+        gap: 28px;
+    }
+
+    .hero-text p,
+    .hero-in-bottom p {
+        max-width: 38ch;
+    }
+
+    .hero-in-bottom .pt-20 {
+        padding-top: 60px;
+    }
+
+    .btn-blue,
+    .btn-white,
+    .btn-yellow,
+    .btn-lined {
+        font-size: 12px;
+        padding: 9px 20px;
+    }
+
+    .div-aus-para {
+        padding: 0px;
+    }
+
+    .div-aus-para p:nth-child(1) {
+        padding-top: 36px;
+    }
+
+    .aus-bottom {
+        display: flex;
+        justify-content: row;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .aus-craft-in {
+        gap: 50px;
+    }
+
+    .spacer.hs {
+        display: none;
+    }
+
+    .mat-mastery {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mat-mastery-img {
+        position: relative;
+    }
+
+    .mat-left-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .mat-mastery-img {
+        height: 280px;
+        width: 100%;
+        object-position: 0px 25%;
+    }
+
+    .mat-mastery .small-img img {
+        width: 105px;
+    }
+
+    .mat-mastery .small-img {
+        right: 26px;
+        bottom: 237px;
+        top: auto;
+    }
+
+
+
+    .explore-brands .container-fluid {
+        padding: 0px;
+    }
+
+    .our-collect {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .our-collect .oc-main-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .oc-right-in {
+        width: 100%;
+    }
+
+    .mr-in {
+        grid-template-columns: 1fr;
+    }
+
+    .mr-in h2 {
+        font-size: 28px !important;
+    }
+
+    .mattress-resources {
+        padding: 0px;
+    }
+
+    .mr-in-right {
+        gap: 0px;
+        width: 100%;
+    }
+
+    .oc-right-in {
+        padding: 0px;
+    }
+
+    .map-in-top {
+        flex-direction: column;
+    }
+
+    .map-in-top .mt-right {
+        max-width: 100%;
+    }
+
+    .sci-behind {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sci-main-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .sci-b-in {
+        padding: 0px;
+        max-width: 100%;
+    }
+
+    .sci-b-in h3 {
+        padding-bottom: 20px;
+    }
+
+    .fm-bottom-wrap {
+        flex-direction: column;
+    }
+
+    .tips-img-wrap .img {
+        height: 459px;
+    }
+
+    .tips .tips-img-box.active {
+        width: 100%;
+    }
+
+    .find-match {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .find-match-img {
+        position: relative;
+    }
+
+    .find-match-in {
+        width: 100%;
+    }
+
+    .exp-brands-wrap {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .explore-brands .box-items {
+        flex: 0 0 80%;
+    }
+
+    .our-collect .sm-img img {
+        width: 105px;
+    }
+
+    .our-collect .sm-img {
+        top: 53%;
+        left: 66%;
+    }
+
+    .our-collect {
+        margin-top: 65px;
+    }
+
+    .tips-img-wrap {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .tips .tips-img-box {
+        width: 100%;
+        flex: 0 0 80%;
+    }
+
+    .mattress-resources .img img {
+        width: 100%;
+    }
+
+    .footer-top .ft-up {
+        flex-direction: column;
+    }
+
+    .ft-up-l {
+        display: none;
+    }
+
+    .fb-down-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .s-img-mob {
+        display: block;
+        position: absolute;
+        bottom: 43px;
+        right: 169px;
+    }
+
+    .s-desc-img {
+        display: none;
+    }
+
+    .slider .s-left {
+        max-width: 100%;
+    }
+
+    .slider .slider-content {
+        grid-template-columns: 1fr;
+    }
+
+    .s-custom-btn {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .slider .cont-main {
+        text-align: center;
+    }
+
+    .slider .cont-main h4 {
+        font-size: 24px;
+    }
+
+    .person-name {
+        padding-top: 40px;
+    }
+
+    .person-name p {
+        text-align: center;
+    }
+
+    .mat-mastery-img {
+        margin-top: 50px;
+    }
+
+    .explore-brands .container-fluid {
+        padding: 0px 10px;
+    }
+
+    .exp-brands-wrap {
+        gap: 10px;
+    }
+
+    .explore-brands .box-items {
+        aspect-ratio: 1 / 1.2;
+    }
+
+    .box-items .img {
+        height: 100%;
+    }
+
+    .oc-main-img {
+        margin-top: 50px;
+    }
+
+    .our-collect .oc-main-img {
+        height: 350px;
+    }
+
+    .sci-main-img {
+        margin-top: 50px;
+    }
+
+    .slider .s-left {
+        gap: 45px;
+    }
+
+    .slider {
+        padding: 48px 0px;
+    }
+
+    .slider .cursiver {
+        font-size: 28px;
+        margin-bottom: -4px;
+    }
+
+    .fm-bottom-wrap .fmb-box img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .fm-bottom-wrap .fmb-box {
+        padding: 30px 20px;
+    }
+
+    .find-match-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .find-match-img {
+        margin-top: 100px;
+    }
+
+    .fm-bottom-wrap {
+        top: 49%;
+        left: 20px;
+    }
+
+    .find-match {
+        padding: 0px;
+    }
+
+    .mattress-resources {
+        margin-top: 90px;
+    }
+
+    .mattress-resources .sm-img {
+        width: 140px;
+    }
+
+    .container-fluid {
+        padding: 0px 10px !important;
+    }
+
+    .mattress-resources {
+        position: relative;
+    }
+
+    .mattress-resources .sm-img {
+        position: absolute;
+        top: 32%;
+        right: 6%;
+
+    }
 }

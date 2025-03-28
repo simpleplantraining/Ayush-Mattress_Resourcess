@@ -61,8 +61,6 @@
     font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 :root {
     --white: #FFFFFF;
     --black: #1A1A1A;
@@ -83,6 +81,7 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    background-color: #F0ECE4;
 }
 
 p {
@@ -101,6 +100,7 @@ ol {
 
 p.cursive {
     font-family: "Beyond Infinity";
+    margin-bottom: -12px;
 }
 
 h1,
@@ -122,6 +122,7 @@ h1 {
 
 h2 {
     font-size: 52px;
+    line-height: 100%;
 }
 
 h3 {
@@ -148,10 +149,21 @@ p {
     font-size: 12px;
 }
 
+.pt-24px {
+    padding-top: 24px;
+}
 
 a {
     text-decoration: none;
     display: inline-block;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.font-bold {
+    font-weight: 700;
 }
 
 .text-white {
@@ -161,9 +173,11 @@ a {
 .text-yellow {
     color: var(--yellow);
 }
-.text-black{
+
+.text-black {
     color: var(--black);
 }
+
 .spacer {
     height: 140px;
 }
@@ -216,6 +230,29 @@ li a:hover {
     text-transform: uppercase;
     transition: .3s ease all;
 
+}
+
+.btn-yellow:hover {
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+.btn-blue:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.custom-btn-next:hover,
+.custom-btn-prev:hover {
+    background-color: white;
+    ;
+}
+
+.custom-btn-next:hover svg path,
+.custom-btn-prev:hover svg path {
+    fill: var(--blue) !important;
 }
 
 .btn-lined {
